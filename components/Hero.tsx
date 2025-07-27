@@ -82,7 +82,7 @@ export function Hero() {
             <div className="flex flex-col gap-2 w-[23.0625rem] animate-fade-in-left" style={{animationDelay: '0.5s'}}>
 
               <div className='flex flex-col'>
-                <div className='bg-white mb-2 p-3 rounded-full flex gap-2 items-center w-fit hover:shadow-md hover:scale-105 transition-all duration-300 animate-fade-in-up' style={{animationDelay: '0.7s'}}>
+                <div className='bg-white mb-2 p-3 rounded-full flex gap-2 items-center w-fit hover:shadow-md hover:scale-105 transition-all duration-300 animate-float' style={{animationDelay: '0.7s'}}>
 <img src={icon1} className='w-5 h-5' alt="" />
                   <p className='text-xs '>Little Dreams, Big Futures</p>
                 </div>
