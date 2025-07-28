@@ -50,7 +50,7 @@ export function Hero() {
 
                           <div className='flex items-center gap-3 mt-[3rem] animate-fade-in-up' style={{animationDelay: '1.2s'}}>
                             <img src={people} alt="" className="animate-pulse-soft" />
-                            <p> <span className='text-primary font-black animate-count-up'> 50+</span> Women have been empowered <br /> by EELI </p>
+                            <p className='font-helvetica font-normal'> <span className='text-primary font-black animate-count-up '> 50+</span> Women have been empowered <br /> by EELI </p>
                           </div>
                 </div>
               </div>
@@ -63,16 +63,16 @@ export function Hero() {
 <div className='absolute bottom-0 right-[-3rem] w-[327px] flex flex-wrap items-center mb-6'>
                            <div className='bg-white mb-2 p-3 ml-2 rounded-full flex gap-2 items-center w-fit hover:shadow-md hover:scale-105 transition-all duration-300 animate-float' style={{animationDelay: '1.4s'}}>
 <img src={icon2} className='w-5 h-5' alt="" />
-                  <p className='text-xs '>Women Who Lead</p>
+                  <p className='text-xs font-helvetica font-normal'>Women Who Lead</p>
                 </div>   <div className='bg-white mb-2 p-3 rounded-full ml-2 flex gap-2 items-center w-fit hover:shadow-md hover:scale-105 transition-all duration-300 animate-float' style={{animationDelay: '1.6s'}}>
 <img src={icon3} className='w-5 h-5' alt="" />
-                  <p className='text-xs '>Empower Her</p>
+                  <p className='text-xs font-helvetica font-normal'>Empower Her</p>
                 </div>   <div className='bg-white mb-2 p-3 ml-2 rounded-full flex gap-2 items-center w-fit hover:shadow-md hover:scale-105 transition-all duration-300 animate-float' style={{animationDelay: '1.8s'}}>
 <img src={icon4} className='w-5 h-5' alt="" />
-                  <p className='text-xs '>She Rises</p>
+                  <p className='text-xs font-helvetica font-normal'>She Rises</p>
                 </div>   <div className='bg-white mb-2 p-3 ml-2 rounded-full flex gap-2 items-center w-fit hover:shadow-md hover:scale-105 transition-all duration-300 animate-float' style={{animationDelay: '2s'}}>
 <img src={icon5} className='w-5 h-5' alt="" />
-                  <p className='text-xs '>Her Voice, Her Power</p>
+                  <p className='text-xs font-helvetica'>Her Voice, Her Power</p>
                 </div>
                   </div>
                 </div>
@@ -84,7 +84,7 @@ export function Hero() {
               <div className='flex flex-col'>
                 <div className='bg-white mb-2 p-3 rounded-full flex gap-2 items-center w-fit hover:shadow-md hover:scale-105 transition-all duration-300 animate-float' style={{animationDelay: '0.7s'}}>
 <img src={icon1} className='w-5 h-5' alt="" />
-                  <p className='text-xs '>Little Dreams, Big Futures</p>
+                  <p className='text-xs font-helvetica font-normal'>Little Dreams, Big Futures</p>
                 </div>
 
                 <div className='flex items-end gap-3'>
@@ -97,7 +97,7 @@ export function Hero() {
   
 
 
-              <p className="animate-fade-in-up" style={{animationDelay: '1.3s'}}>We believe every child deserves joy, love, and the chance to 
+              <p className="animate-fade-in-up font-helvetica font-normal" style={{animationDelay: '1.3s'}}>We believe every child deserves joy, love, and the chance to 
                 grow in a safe and supportive environment. 
                 Through community care and compassion, we create moments that light up their world.
                 </p>

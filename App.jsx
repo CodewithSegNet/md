@@ -24,7 +24,8 @@ function App() {
       />
       <main className="overflow-x-hidden">
         <Hero />
-        {/* <GetInvolved />
+        <GetInvolved />
+        {/* 
         <AboutSection />
         <ServicesSection />
         <WhatMakesUsBest />
