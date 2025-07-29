@@ -75,7 +75,7 @@ export function GetInvolved() {
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className='flex items-end justify-center gap-5'>
           <div className='bg-[rgba(203,8,240,0.1)] relative rounded-2xl p-7 animate-fade-in-left' style={{animationDelay: '0.2s'}}>
-            <img src={woman} className='w-[407px] h-[386px] relative hover:scale-105 transition-transform duration-500 ease-out' alt="" />
+            <img src={woman} className='w-[577px] h-auto relative hover:scale-105 transition-transform duration-500 ease-out' alt="" />
             <img src={buttonarr} className='absolute top-10 right-12 w-14 h-14 transform hover:-translate-y-1 hover:scale-105 duration-300 animate-float' style={{animationDelay: '0.8s'}} alt="" />
 
             <div className='w-[400px] pt-[1rem] animate-fade-in-up' style={{animationDelay: '0.4s'}}>
@@ -84,13 +84,13 @@ export function GetInvolved() {
             </div>
           </div>
 
-          <div className='w-[374px] animate-fade-in-up' style={{animationDelay: '0.3s'}}>
+          <div className='w-[424px] animate-fade-in-up' style={{animationDelay: '0.3s'}}>
             <h3 className='text-3xl font-georgia mb-4'>Get Involved</h3>
             <p className='text-sm mb-4'> Together, we can uplift voices, and build lasting legacies that empower women and transform generations.</p>
 
 
             <div 
-  className="w-[374px] h-[423px] bg-cover bg-center bg-no-repeat relative rounded-2xl overflow-hidden animate-fade-in-up hover:scale-105 transition-transform duration-500 ease-out"
+  className="w-[424px] h-[423px] bg-cover bg-center bg-no-repeat relative rounded-2xl overflow-hidden animate-fade-in-up hover:scale-105 transition-transform duration-500 ease-out"
   style={{ backgroundImage: `url(${PlayCard})`, animationDelay: '0.5s' }}
 >              
 
