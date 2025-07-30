@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Mail, CheckCircle, Send } from 'lucide-react';
-import img1 from '../assets/itemTestimonial.png'
-import img2 from '../assets/itemTestimonial1.png'
-import img3 from '../assets/itemTestimonial2.png'
-import img4 from '../assets/itemTestimonial3.png'
+import img1 from '../assets/ItemTestimonial.png'
+import img2 from '../assets/ItemTestimonial1.png'
+import img3 from '../assets/ItemTestimonial2.png'
+import img4 from '../assets/ItemTestimonial3.png'
 
 
 export function NewsletterSection() {
