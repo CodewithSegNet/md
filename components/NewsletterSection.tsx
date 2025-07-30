@@ -5,7 +5,6 @@ import img2 from '../assets/itemTestimonial1.png'
 import img3 from '../assets/itemTestimonial2.png'
 import img4 from '../assets/itemTestimonial3.png'
 
-import { toast } from 'sonner';
 
 export function NewsletterSection() {
 
