@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X, Heart } from 'lucide-react';
 import Logo from '../assets/Logo.svg'
 import menu1 from '../assets/menu1.svg'
@@ -12,6 +12,35 @@ interface HeaderProps {
 }
 
 export function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) {
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [isScrollingUp, setIsScrollingUp] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        // Scrolling down
+        setIsVisible(false);
+        setIsScrollingUp(false);
+      } else if (currentScrollY < lastScrollY && currentScrollY > 100) {
+        // Scrolling up (but not at top)
+        setIsVisible(true);
+        setIsScrollingUp(true);
+      } else if (currentScrollY <= 100) {
+        // At top - show header but remove background
+        setIsVisible(true);
+        setIsScrollingUp(false);
+      }
+      
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
+
   const navigationItems = [
     { name: 'Home', href: 'home' },
     { name: 'About Us', href: 'About us' },
@@ -21,7 +50,9 @@ export function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50  ">
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${
+      isVisible ? 'translate-y-0' : '-translate-y-full'
+    } ${isScrollingUp ? 'bg-gray-100 pb-4' : ''}`}>
       <div className="max-w-screen-2xl pt-5 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}

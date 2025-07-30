@@ -2,12 +2,13 @@ import { useState } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { GetInvolved } from './components/GetInvolved';
-import { AboutSection } from './components/AboutSection';
+import { ThirdSection } from './components/ThirdSectionCard.js';
 import { ServicesSection } from './components/ServicesSection';
 import { WhatMakesUsBest } from './components/WhatMakesUsBest';
 import { Gallery } from './components/Gallery';
 import { NewsletterSection } from './components/NewsletterSection';
-import { QuestionsSection } from './components/QuestionsSection';
+import  FAQSection  from './components/QuestionsSection';
+import  Payment  from './components/payment';
 import { Footer } from './components/Footer';
 import { CookieConsent } from './utils/cookies.jsx';
 import './App.css'
@@ -25,15 +26,17 @@ function App() {
       <main className="overflow-x-hidden">
         <Hero />
         <GetInvolved />
-        {/* 
-        <AboutSection />
+        <ThirdSection />
         <ServicesSection />
         <WhatMakesUsBest />
         <Gallery />
         <NewsletterSection />
-        <QuestionsSection /> */}
+        <Payment/>
+  <FAQSection /> 
+
+ 
       </main>
-      {/* <Footer /> */}
+      <Footer />
       
       {/* Cookie Consent Banner */}
       <CookieConsent />
