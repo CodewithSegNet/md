@@ -33,7 +33,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[rgba(70,18,118,1)] text-white">
+    <footer className="bg-[rgba(70,18,118,1)] py-20 text-white">
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
         <div className="py-16 flex items-center gap-[14rem]">

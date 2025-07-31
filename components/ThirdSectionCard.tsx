@@ -33,7 +33,7 @@ export function ThirdSection() {
 
   <div className='flex items-center '>
 
-    <div className='w-[374px] border-r pr-6'>
+    <div className='w-[374px] border-r border-gray-400 pr-6'>
 <img src={svgImg} className='mb-3' alt="" />
 
 <h3 className='font-georgia font-normal text-2xl mb-3'>Understand What You’re Feeling </h3>

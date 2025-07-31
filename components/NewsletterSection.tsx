@@ -26,334 +26,334 @@ From <span className='text-[rgba(203,8,240,1)]'> Women  </span>  and <span class
   <div className="flex animate-scroll">
     <div className="flex min-w-full">
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img1} alt="" className="w-[300px] h-auto" />
+        <img src={img1} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img2} alt="" className="w-[300px] h-auto" />
+        <img src={img2} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img3} alt="" className="w-[300px] h-auto" />
+        <img src={img3} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img4} alt="" className="w-[300px] h-auto" />
+        <img src={img4} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img2} alt="" className="w-[300px] h-auto" />
+        <img src={img2} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img1} alt="" className="w-[300px] h-auto" />
+        <img src={img1} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img4} alt="" className="w-[300px] h-auto" />
+        <img src={img4} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img3} alt="" className="w-[300px] h-auto" />
+        <img src={img3} alt="" className="w-[350px] h-auto" />
       </div>
 
 
 
           <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img2} alt="" className="w-[300px] h-auto" />
+        <img src={img2} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img3} alt="" className="w-[300px] h-auto" />
+        <img src={img3} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img4} alt="" className="w-[300px] h-auto" />
+        <img src={img4} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img2} alt="" className="w-[300px] h-auto" />
+        <img src={img2} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img1} alt="" className="w-[300px] h-auto" />
+        <img src={img1} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img4} alt="" className="w-[300px] h-auto" />
+        <img src={img4} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img3} alt="" className="w-[300px] h-auto" />
+        <img src={img3} alt="" className="w-[350px] h-auto" />
       </div>
 
 
 
           <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img2} alt="" className="w-[300px] h-auto" />
+        <img src={img2} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img3} alt="" className="w-[300px] h-auto" />
+        <img src={img3} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img4} alt="" className="w-[300px] h-auto" />
+        <img src={img4} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img2} alt="" className="w-[300px] h-auto" />
+        <img src={img2} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img1} alt="" className="w-[300px] h-auto" />
+        <img src={img1} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img4} alt="" className="w-[300px] h-auto" />
+        <img src={img4} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img3} alt="" className="w-[300px] h-auto" />
-      </div>
-
-
-
-
-          <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img2} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img3} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img4} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img2} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img1} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img4} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img3} alt="" className="w-[300px] h-auto" />
-      </div>
-
-
-          <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img2} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img3} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img4} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img2} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img1} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img4} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img3} alt="" className="w-[300px] h-auto" />
-      </div>
-
-
-          <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img2} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img3} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img4} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img2} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img1} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img4} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img3} alt="" className="w-[300px] h-auto" />
-      </div>
-
-
-          <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img2} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img3} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img4} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img2} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img1} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img4} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img3} alt="" className="w-[300px] h-auto" />
-      </div>
-
-
-
-          <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img2} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img3} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img4} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img2} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img1} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img4} alt="" className="w-[300px] h-auto" />
-      </div>
-
-      <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img3} alt="" className="w-[300px] h-auto" />
+        <img src={img3} alt="" className="w-[350px] h-auto" />
       </div>
 
 
 
 
           <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img2} alt="" className="w-[300px] h-auto" />
+        <img src={img2} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img3} alt="" className="w-[300px] h-auto" />
+        <img src={img3} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img4} alt="" className="w-[300px] h-auto" />
+        <img src={img4} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img2} alt="" className="w-[300px] h-auto" />
+        <img src={img2} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img1} alt="" className="w-[300px] h-auto" />
+        <img src={img1} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img4} alt="" className="w-[300px] h-auto" />
+        <img src={img4} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img3} alt="" className="w-[300px] h-auto" />
+        <img src={img3} alt="" className="w-[350px] h-auto" />
+      </div>
+
+
+          <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img2} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img3} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img4} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img2} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img1} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img4} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img3} alt="" className="w-[350px] h-auto" />
+      </div>
+
+
+          <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img2} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img3} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img4} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img2} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img1} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img4} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img3} alt="" className="w-[350px] h-auto" />
+      </div>
+
+
+          <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img2} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img3} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img4} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img2} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img1} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img4} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img3} alt="" className="w-[350px] h-auto" />
       </div>
 
 
 
           <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img2} alt="" className="w-[300px] h-auto" />
+        <img src={img2} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img3} alt="" className="w-[300px] h-auto" />
+        <img src={img3} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img4} alt="" className="w-[300px] h-auto" />
+        <img src={img4} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img2} alt="" className="w-[300px] h-auto" />
+        <img src={img2} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img1} alt="" className="w-[300px] h-auto" />
+        <img src={img1} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img4} alt="" className="w-[300px] h-auto" />
+        <img src={img4} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img3} alt="" className="w-[300px] h-auto" />
+        <img src={img3} alt="" className="w-[350px] h-auto" />
+      </div>
+
+
+
+
+          <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img2} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img3} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img4} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img2} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img1} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img4} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img3} alt="" className="w-[350px] h-auto" />
       </div>
 
 
 
           <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img2} alt="" className="w-[300px] h-auto" />
+        <img src={img2} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img3} alt="" className="w-[300px] h-auto" />
+        <img src={img3} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img4} alt="" className="w-[300px] h-auto" />
+        <img src={img4} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img2} alt="" className="w-[300px] h-auto" />
+        <img src={img2} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img1} alt="" className="w-[300px] h-auto" />
+        <img src={img1} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img4} alt="" className="w-[300px] h-auto" />
+        <img src={img4} alt="" className="w-[350px] h-auto" />
       </div>
 
       <div className="min-w-0 flex-shrink-0 px-2">
-        <img src={img3} alt="" className="w-[300px] h-auto" />
+        <img src={img3} alt="" className="w-[350px] h-auto" />
+      </div>
+
+
+
+          <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img2} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img3} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img4} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img2} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img1} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img4} alt="" className="w-[350px] h-auto" />
+      </div>
+
+      <div className="min-w-0 flex-shrink-0 px-2">
+        <img src={img3} alt="" className="w-[350px] h-auto" />
       </div>
     </div>
 
