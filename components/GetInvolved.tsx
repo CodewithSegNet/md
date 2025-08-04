@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useScrollAnimation } from '../utils/animation';
 import woman from '../assets/woman-posing.png'
 import buttonarr from '../assets/buttonarr.svg'
 import PlayCard from '../assets/playcard.png'
@@ -43,6 +44,10 @@ const events = [
 export function GetInvolved() {
   const [currentEvent, setCurrentEvent] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [sectionRef, isSectionVisible] = useScrollAnimation({ threshold: 0.2 });
+  const [leftCardRef, isLeftCardVisible] = useScrollAnimation({ threshold: 0.3 });
+  const [centerCardRef, isCenterCardVisible] = useScrollAnimation({ threshold: 0.3 });
+  const [rightCardRef, isRightCardVisible] = useScrollAnimation({ threshold: 0.3 });
 
   const transitionToEvent = (newIndex) => {
     if (newIndex === currentEvent || isTransitioning) return;
@@ -71,68 +76,94 @@ export function GetInvolved() {
   };
 
   return (
-    <section className="py-16 lg:py-24 mx-auto bg-gradient-to-br from-purple-50 to-pink-50 overflow-hidden">
+    <section ref={sectionRef} className="py-16 lg:py-24 mx-auto bg-gradient-to-br from-purple-50 to-pink-50 overflow-hidden">
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className='flex items-end justify-center gap-5'>
-          <div className='bg-[rgba(203,8,240,0.1)] relative rounded-2xl p-7 animate-fade-in-left' style={{animationDelay: '0.2s'}}>
+          <div ref={leftCardRef} className={`bg-[rgba(203,8,240,0.1)] relative rounded-2xl p-7 transition-all duration-1000 ease-out ${
+            isLeftCardVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
+          }`}>
             <img src={woman} className='w-[577px] h-auto relative hover:scale-105 transition-transform duration-500 ease-out' alt="" />
-            <img src={buttonarr} className='absolute top-10 right-12 w-14 h-14 transform hover:-translate-y-1 hover:scale-105 duration-300 animate-float' style={{animationDelay: '0.8s'}} alt="" />
+            <img src={buttonarr} className={`absolute top-10 right-12 w-14 h-14 transform hover:-translate-y-1 hover:scale-105 duration-300 transition-all delay-700 ${
+              isLeftCardVisible ? 'opacity-100 translate-y-0 animate-float' : 'opacity-0 translate-y-4'
+            }`} alt="" />
 
-            <div className='w-[400px] pt-[1rem] animate-fade-in-up' style={{animationDelay: '0.4s'}}>
+            <div className={`w-[400px] pt-[1rem] transition-all duration-800 delay-300 ${
+              isLeftCardVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+            }`}>
               <h3 className='font-georgia font-normal text-3xl mb-2'>Where <span className='text-regular'>Love</span> Begins and Grows</h3>
               <p className='text-sm font-helvetica'>How we empower the bond between women and children through care, support, and lasting impact.</p>
             </div>
           </div>
 
-          <div className='w-[424px] animate-fade-in-up' style={{animationDelay: '0.3s'}}>
+          <div ref={centerCardRef} className={`w-[424px] transition-all duration-1000 delay-200 ease-out ${
+            isCenterCardVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}>
             <h3 className='text-3xl font-georgia mb-4'>Get Involved</h3>
             <p className='text-sm mb-4'> Together, we can uplift voices, and build lasting legacies that empower women and transform generations.</p>
 
 
             <div 
-  className="w-[424px] h-[423px] bg-cover bg-center bg-no-repeat relative rounded-2xl overflow-hidden animate-fade-in-up hover:scale-105 transition-transform duration-500 ease-out"
-  style={{ backgroundImage: `url(${PlayCard})`, animationDelay: '0.5s' }}
+  className={`w-[424px] h-[423px] bg-cover bg-center bg-no-repeat relative rounded-2xl overflow-hidden hover:scale-105 transition-all duration-700 ease-out ${
+    isCenterCardVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+  }`}
+  style={{ backgroundImage: `url(${PlayCard})` }}
 >              
 
 
 <div className="p-6 text-white">
 
 
-<div className='w-full flex items-center justify-between px-2 mb-10'>
-  <img src={bolb} alt="" className="animate-pulse-soft" />
-    <img src={arrup} alt="" className="animate-bounce-soft" />
+<div className={`w-full flex items-center justify-between px-2 mb-10 transition-all duration-600 delay-500 ${
+  isCenterCardVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
+}`}>
+  <img src={bolb} alt="" className={`transition-all duration-300 ${isCenterCardVisible ? 'animate-pulse-soft' : ''}`} />
+    <img src={arrup} alt="" className={`transition-all duration-300 ${isCenterCardVisible ? 'animate-bounce-soft' : ''}`} />
 
 </div>
 
-                <h1 className="text-2xl font-georgia text-white font-bold mb-6 animate-fade-in-up" style={{animationDelay: '0.7s'}}>Upcoming Events</h1>
+                <h1 className={`text-2xl font-georgia text-white font-bold mb-6 transition-all duration-700 delay-400 ${
+                  isCenterCardVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+                }`}>Upcoming Events</h1>
                 
                 {/* Event Content */}
                 <div className={`space-y-4 transition-all duration-300 w-fit ease-in-out ${
-                  isTransitioning ? 'opacity-0 transform translate-y-2' : 'opacity-100 transform translate-y-0'
+                  isTransitioning ? 'opacity-0 transform translate-y-2' : `opacity-100 transform translate-y-0 ${
+                    isCenterCardVisible ? 'delay-600' : 'opacity-0'
+                  }`
                 }`}>
-                  <div className="flex items-center bg-[rgba(255,255,255,0.2)] p-2 rounded-full gap-3 transform transition-all duration-200 hover:translate-x-1 animate-fade-in-left" style={{animationDelay: '0.9s'}}>
+                  <div className={`flex items-center bg-[rgba(255,255,255,0.2)] p-2 rounded-full gap-3 transform transition-all duration-500 hover:translate-x-1 delay-700 ${
+                    isCenterCardVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-6'
+                  }`}>
                     <img src={video} alt="" className="w-6 h-6 transition-transform duration-200 hover:scale-110" />
                     <p className="text-lg font-bold transition-colors duration-200 text-white">{events[currentEvent].title}</p>
                   </div>
 
-                  <div className="flex w-fit items-center gap-3 bg-[rgba(255,255,255,0.2)] p-2 rounded-full transform transition-all duration-200 hover:translate-x-1 animate-fade-in-left" style={{ transitionDelay: '50ms', animationDelay: '1.1s' }}>
+                  <div className={`flex w-fit items-center gap-3 bg-[rgba(255,255,255,0.2)] p-2 rounded-full transform transition-all duration-500 hover:translate-x-1 delay-800 ${
+                    isCenterCardVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-6'
+                  }`}>
                     <img src={calendar} alt="" className="w-6 h-6 transition-transform duration-200 hover:scale-110" />
                     <p className="transition-colors font-bold  duration-200 text-white">{events[currentEvent].date}</p>
                   </div>
 
-                  <div className="flex w-fit items-center gap-3 bg-[rgba(255,255,255,0.2)] p-2 rounded-full transform transition-all duration-200 hover:translate-x-1 animate-fade-in-left" style={{ transitionDelay: '100ms', animationDelay: '1.3s' }}>
+                  <div className={`flex w-fit items-center gap-3 bg-[rgba(255,255,255,0.2)] p-2 rounded-full transform transition-all duration-500 hover:translate-x-1 delay-900 ${
+                    isCenterCardVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-6'
+                  }`}>
                     <img src={time} alt="" className="w-6 h-6 transition-transform duration-200 hover:scale-110" />
                     <p className="transition-colors font-bold duration-200 text-white">{events[currentEvent].time}</p>
                   </div>
 
-                  <div className="flex w-fit items-center gap-3 bg-[rgba(255,255,255,0.2)] p-2 rounded-full transform transition-all duration-200 hover:translate-x-1 animate-fade-in-left" style={{ transitionDelay: '150ms', animationDelay: '1.5s' }}>
+                  <div className={`flex w-fit items-center gap-3 bg-[rgba(255,255,255,0.2)] p-2 rounded-full transform transition-all duration-500 hover:translate-x-1 delay-1000 ${
+                    isCenterCardVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-6'
+                  }`}>
                     <img src={speaker} alt="" className="w-6 h-6  transition-transform duration-200 hover:scale-110" />
                     <p className="transition-colors font-bold  duration-200 text-white">{events[currentEvent].speaker}</p>
                   </div>
                 </div>
 
                 {/* Carousel Controls */}
-                <div className="absolute bottom-6 left-6 right-6 animate-fade-in-up" style={{animationDelay: '1.7s'}}>
+                <div className={`absolute bottom-6 left-6 right-6 transition-all duration-700 delay-1100 ${
+                  isCenterCardVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+                }`}>
                   {/* Navigation Arrows */}
                   <div className="flex justify-between items-center mb-4">
                     <button
@@ -180,23 +211,30 @@ export function GetInvolved() {
 
 
 
-<div className='bg-white p-4 h-[375px] w-[374px] rounded-2xl animate-fade-in-right' style={{animationDelay: '0.6s'}}>
+<div ref={rightCardRef} className={`bg-white p-4 h-[375px] w-[374px] rounded-2xl transition-all duration-1000 delay-400 ease-out ${
+  isRightCardVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
+}`}>
 
-<div className="animate-fade-in-up" style={{animationDelay: '0.8s'}}>
+<div className={`transition-all duration-800 delay-600 ${
+  isRightCardVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+}`}>
   <h3 className='font-georgia text-3xl mb-3'> Join Our Community</h3>
   <p className='font-helvetica text-sm'>Be part of a strong, supportive network where women and children thrive</p>
 </div>
 
-<div className='w-full flex items-center justify-center my-[2rem] animate-fade-in-up' style={{animationDelay: '1s'}}>
-  <img src={circle} className='w-[150px] hover:scale-105 transition-transform duration-500 ease-out animate-pulse-soft' alt="" />
+<div className={`w-full flex items-center justify-center my-[2rem] transition-all duration-800 delay-800 ${
+  isRightCardVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'
+}`}>
+  <img src={circle} className={`w-[150px] hover:scale-105 transition-transform duration-500 ease-out ${
+    isRightCardVisible ? 'animate-pulse-soft' : ''
+  }`} alt="" />
 </div>
 
-
-
-
-                         <button className='bg-primary mx-auto w-fit transition-all hover:bg-purple-500 hover:scale-105 hover:shadow-lg duration-300 rounded-full py-4 px-10 text-white flex items-center gap-2 justify-center group animate-fade-in-up transform hover:-translate-y-1' style={{animationDelay: '1.2s'}}>
-                            <p className='text-white flex items-center gap-3 font-bold text-sm font-helvetica transition-all duration-300 group-hover:tracking-wide'><span> <img src={whatsapp} alt="" /></span> JOIN EELI COMMUNITY</p>
-                          </button>
+<button className={`bg-primary mx-auto w-fit transition-all hover:bg-purple-500 hover:scale-105 hover:shadow-lg duration-300 rounded-full py-4 px-10 text-white flex items-center gap-2 justify-center group transform hover:-translate-y-1 delay-1000 ${
+  isRightCardVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+}`}>
+  <p className='text-white flex items-center gap-3 font-bold text-sm font-helvetica transition-all duration-300 group-hover:tracking-wide'><span> <img src={whatsapp} alt="" /></span> JOIN EELI COMMUNITY</p>
+</button>
 
 </div>
         </div>
