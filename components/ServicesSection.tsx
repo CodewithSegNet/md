@@ -1,7 +1,7 @@
 import { useScrollAnimation } from '../utils/animation';
-import desktop from '../assets/Desktop.png'
-import desktop1 from '../assets/Desktop1.png'
-import desktop2 from '../assets/Desktop2.png'
+import desktop from '../assets/Desktop.svg'
+import desktop1 from '../assets/Desktop1.svg'
+import desktop2 from '../assets/Desktop2.svg'
 
 
 

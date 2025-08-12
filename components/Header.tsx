@@ -42,8 +42,8 @@ export function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) {
   }, [lastScrollY]);
 
   const navigationItems = [
-    { name: 'Home', href: 'home' },
-    { name: 'About Us', href: 'About us' },
+    { name: 'Home', href: '/' },
+    { name: 'About Us', href: '/about-us' },
     { name: 'Gallery', href: 'Gallery' },
     { name: 'Announcements', href: 'Announcements' },
     { name: 'Blog', href: 'Blog' },
