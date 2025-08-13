@@ -14,64 +14,64 @@ import icon5 from '../assets/twi5.png'
 
 export function Hero() {
   return (
-    <section id="home" className="pt-[9rem] bg-gradient-to-br from-purple-50 to-pink-50 overflow-hidden">
+    <section id="home" className="pt-[4.3rem] lg:pt-[9rem] bg-gradient-to-br from-purple-50 to-pink-50 overflow-hidden">
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
         <div className="flex items-center">
           {/* Content */}
-          <div className="flex justify-evenly gap-5 space-y-8">
-            <div className="flex relative gap-5">
+          <div className="flex flex-col lg:flex-row justify-evenly gap-5 space-y-8 lg:space-y-0">
+            <div className="flex flex-col lg:flex-row relative gap-5">
               
               <div className='space-y-1'>
-<h1 className="bg-white p-3 text-4xl md:text-5xl lg:text-6xl font-normal w-fit rounded-2xl font-georgia text-gray-900 leading-tight relative animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+<h1 className="bg-white p-2 sm:p-3 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-normal w-fit rounded-2xl font-georgia text-gray-900 leading-tight relative animate-fade-in-up" style={{animationDelay: '0.2s'}}>
                 Empowering Women,
               
               </h1>
-                  <p className=" text-regular bg-white p-3 text-4xl md:text-5xl lg:text-6xl font-normal w-fit rounded-2xl font-georgia leading-tight animate-fade-in-up" style={{animationDelay: '0.4s'}}>
+                  <p className=" text-regular bg-white p-2 sm:p-3 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-normal w-fit rounded-2xl font-georgia leading-tight animate-fade-in-up" style={{animationDelay: '0.4s'}}>
                   Uplifting Children,
                 </p>
                 
-                <h1 className='bg-white absolute p-3 z-50 text-4xl md:text-5xl lg:text-6xl font-normal w-fit rounded-2xl font-georgia text-gray-900 leading-tight animate-fade-in-up' style={{animationDelay: '0.6s'}}>
+                <h1 className='bg-white absolute p-2 sm:p-3 z-30 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-normal w-fit rounded-2xl font-georgia text-gray-900 leading-tight animate-fade-in-up' style={{animationDelay: '0.6s'}}>
                 Transforming Generation
                 </h1>
 
-                <div className='flex gap-3 flex-col relative pt-[6rem]'>
+                <div className='flex gap-3 flex-col relative pt-[4rem] sm:pt-[5rem] lg:pt-[6rem]'>
 
-                     <p className=" text-md md:text-md text-gray-600 leading-relaxed w-[36.5rem] animate-fade-in-up" style={{animationDelay: '0.8s'}}>
+                     <p className=" text-sm sm:text-md md:text-md text-gray-600 leading-relaxed w-full max-w-[36.5rem] animate-fade-in-up" style={{animationDelay: '0.8s'}}>
                 EELI is dedicated to fostering joy, hope, and lasting change through mentorship, community support, and love.
               </p>
 
 
 
 
-                         <button className='bg-primary w-fit transition-all hover:bg-purple-500 hover:scale-105 hover:shadow-lg duration-300 rounded-full py-4 px-10 text-white flex items-center gap-2 justify-center group animate-fade-in-up transform hover:-translate-y-1' style={{animationDelay: '1s'}}>
-                            <p className='text-white font-bold text-sm font-helvetica transition-all duration-300 group-hover:tracking-wide'>EMPOWER A WOMAN NOW</p>
+                         <button className='bg-primary w-fit transition-all hover:bg-purple-500 hover:scale-105 hover:shadow-lg duration-300 rounded-full py-3 px-6 sm:py-4 sm:px-10 text-white flex items-center gap-2 justify-center group animate-fade-in-up transform hover:-translate-y-1' style={{animationDelay: '1s'}}>
+                            <p className='text-white font-bold text-xs sm:text-sm font-helvetica transition-all duration-300 group-hover:tracking-wide'>EMPOWER A WOMAN NOW</p>
                           </button>
 
 
-                          <div className='flex items-center gap-3 mt-[3rem] animate-fade-in-up' style={{animationDelay: '1.2s'}}>
-                            <img src={people} alt="" className="animate-pulse-soft" />
-                            <p className='font-helvetica font-normal'> <span className='text-primary font-black animate-count-up '> 50+</span> Women have been empowered <br /> by EELI </p>
+                          <div className='flex items-center gap-3 mt-[2rem] sm:mt-[3rem] animate-fade-in-up' style={{animationDelay: '1.2s'}}>
+                            <img src={people} alt="" className="animate-pulse-soft w-8 h-8 sm:w-auto sm:h-auto" />
+                            <p className='font-helvetica font-normal text-sm sm:text-base'> <span className='text-primary font-black animate-count-up '> 50+</span> Women have been empowered <br /> by EELI </p>
                           </div>
                 </div>
               </div>
 
 
 
-  <div className='relative inset-0 w-[29.875rem] animate-fade-in-right' style={{animationDelay: '0.3s'}}>
-                  <img src={hero} className='relative hover:scale-105 transition-transform duration-500 ease-out' alt="" />
+  <div className='relative inset-0 w-full max-w-[29.875rem] animate-fade-in-right' style={{animationDelay: '0.3s'}}>
+                  <img src={hero} className='relative hover:scale-105 transition-transform duration-500 ease-out w-full h-auto' alt="" />
 
-<div className='absolute bottom-0 right-[-3rem] w-[327px] flex flex-wrap items-center mb-6'>
-                           <div className='bg-white mb-2 p-3 ml-2 rounded-full flex gap-2 items-center w-fit hover:shadow-md hover:scale-105 transition-all duration-300 animate-float' style={{animationDelay: '1.4s'}}>
-<img src={icon2} className='w-5 h-5' alt="" />
+<div className='absolute bottom-0 right-[-1rem] sm:right-[-3rem] w-full max-w-[327px] flex flex-wrap items-center mb-6'>
+                           <div className='bg-white mb-2 p-2 sm:p-3 ml-1 sm:ml-2 rounded-full flex gap-2 items-center w-fit hover:shadow-md hover:scale-105 transition-all duration-300 animate-float' style={{animationDelay: '1.4s'}}>
+<img src={icon2} className='w-4 h-4 sm:w-5 sm:h-5' alt="" />
                   <p className='text-xs font-helvetica font-normal'>Women Who Lead</p>
-                </div>   <div className='bg-white mb-2 p-3 rounded-full ml-2 flex gap-2 items-center w-fit hover:shadow-md hover:scale-105 transition-all duration-300 animate-float' style={{animationDelay: '1.6s'}}>
-<img src={icon3} className='w-5 h-5' alt="" />
+                </div>   <div className='bg-white mb-2 p-2 sm:p-3 rounded-full ml-1 sm:ml-2 flex gap-2 items-center w-fit hover:shadow-md hover:scale-105 transition-all duration-300 animate-float' style={{animationDelay: '1.6s'}}>
+<img src={icon3} className='w-4 h-4 sm:w-5 sm:h-5' alt="" />
                   <p className='text-xs font-helvetica font-normal'>Empower Her</p>
-                </div>   <div className='bg-white mb-2 p-3 ml-2 rounded-full flex gap-2 items-center w-fit hover:shadow-md hover:scale-105 transition-all duration-300 animate-float' style={{animationDelay: '1.8s'}}>
-<img src={icon4} className='w-5 h-5' alt="" />
+                </div>   <div className='bg-white mb-2 p-2 sm:p-3 ml-1 sm:ml-2 rounded-full flex gap-2 items-center w-fit hover:shadow-md hover:scale-105 transition-all duration-300 animate-float' style={{animationDelay: '1.8s'}}>
+<img src={icon4} className='w-4 h-4 sm:w-5 sm:h-5' alt="" />
                   <p className='text-xs font-helvetica font-normal'>She Rises</p>
-                </div>   <div className='bg-white mb-2 p-3 ml-2 rounded-full flex gap-2 items-center w-fit hover:shadow-md hover:scale-105 transition-all duration-300 animate-float' style={{animationDelay: '2s'}}>
-<img src={icon5} className='w-5 h-5' alt="" />
+                </div>   <div className='bg-white mb-2 p-2 sm:p-3 ml-1 sm:ml-2 rounded-full flex gap-2 items-center w-fit hover:shadow-md hover:scale-105 transition-all duration-300 animate-float' style={{animationDelay: '2s'}}>
+<img src={icon5} className='w-4 h-4 sm:w-5 sm:h-5' alt="" />
                   <p className='text-xs font-helvetica'>Her Voice, Her Power</p>
                 </div>
                   </div>
@@ -79,33 +79,33 @@ export function Hero() {
          
             </div>
 
-            <div className="flex flex-col gap-2 w-[23.0625rem] animate-fade-in-left" style={{animationDelay: '0.5s'}}>
+            <div className="flex flex-col gap-2 w-full max-w-[23.0625rem] animate-fade-in-left" style={{animationDelay: '0.5s'}}>
 
               <div className='flex flex-col'>
-                <div className='bg-white mb-2 p-3 rounded-full flex gap-2 items-center w-fit hover:shadow-md hover:scale-105 transition-all duration-300 animate-float' style={{animationDelay: '0.7s'}}>
-<img src={icon1} className='w-5 h-5' alt="" />
+                <div className='bg-white mb-2 p-2 sm:p-3 rounded-full flex gap-2 items-center w-fit hover:shadow-md hover:scale-105 transition-all duration-300 animate-float' style={{animationDelay: '0.7s'}}>
+<img src={icon1} className='w-4 h-4 sm:w-5 sm:h-5' alt="" />
                   <p className='text-xs font-helvetica font-normal'>Little Dreams, Big Futures</p>
                 </div>
 
                 <div className='flex items-end gap-3'>
-      <h2 className='text-[30px] font-normal font-georgia animate-fade-in-up' style={{animationDelay: '0.9s'}}>
+      <h2 className='text-[20px] sm:text-[25px] lg:text-[30px] font-normal font-georgia animate-fade-in-up' style={{animationDelay: '0.9s'}}>
                 Every Child <br /> Deserves to Smile
               </h2>
 
-              <img src={smily} className='pb-2 animate-bounce-soft' style={{animationDelay: '1.1s'}} alt="" />
+              <img src={smily} className='pb-2 animate-bounce-soft w-6 h-6 sm:w-8 sm:h-8' style={{animationDelay: '1.1s'}} alt="" />
                 </div>
   
 
 
-              <p className="animate-fade-in-up font-helvetica font-normal" style={{animationDelay: '1.3s'}}>We believe every child deserves joy, love, and the chance to 
+              <p className="animate-fade-in-up font-helvetica font-normal text-sm sm:text-base" style={{animationDelay: '1.3s'}}>We believe every child deserves joy, love, and the chance to 
                 grow in a safe and supportive environment. 
                 Through community care and compassion, we create moments that light up their world.
                 </p>
               </div>
 
       
-<div className='w-[23.0625rem ] animate-fade-in-up' style={{animationDelay: '1.5s'}}>
-                <img src={hero2} alt="" className="hover:scale-105 transition-transform duration-500 ease-out" />
+<div className='w-full max-w-[23.0625rem] animate-fade-in-up' style={{animationDelay: '1.5s'}}>
+                <img src={hero2} alt="" className="hover:scale-105 transition-transform duration-500 ease-out w-full h-auto" />
 
 </div>
         

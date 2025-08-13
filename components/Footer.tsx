@@ -5,20 +5,20 @@ import Logo from '../assets/secondLogo.svg'
 
 export function Footer() {
   const quickLinks = [
-    { name: 'Home', href: '#Home' },
-    { name: 'About Us', href: '#About Us' },
-    { name: 'Blog', href: '#get-involved' },
-    { name: 'Gallery', href: '#gallery' },
-    { name: 'Announcements', href: '#contact' },
+    { name: 'Home', href: '/' },
+    { name: 'About Us', href: '/about-us' },
+    { name: 'Blog', href: '/get-involved' },
+    { name: 'Gallery', href: '/gallery' },
+    { name: 'Announcements', href: '/contact' },
   ];
 
   const programs = [
-    { name: 'Email', href: '' },
-    { name: 'elevationeeli@gmail.com ', href: 'elevationeeli@gmail.com ' },
-    { name: 'Phone', href: 'Phone' },
-    { name: '+1 (647) 891-4521', href: '+1 (647) 891-4521' },
-    { name: 'Office Hours:', href: 'Office Hours:' },
-    { name: 'Mon–Sat, 9 AM – 6 PM', href: 'Mon–Sat, 9 AM – 6 PM' },
+    { name: 'Email', href: '', isLabel: true },
+    { name: 'elevationeeli@gmail.com ', href: 'mailto:elevationeeli@gmail.com', isLabel: false },
+    { name: 'Phone', href: '', isLabel: true },
+    { name: '+1 (647) 891-4521', href: 'tel:+16478914521', isLabel: false },
+    { name: 'Office Hours:', href: '', isLabel: true },
+    { name: 'Mon–Sat, 9 AM – 6 PM', href: '', isLabel: false },
 
   ];
 
@@ -33,12 +33,12 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[rgba(70,18,118,1)] py-20 text-white">
+    <footer className="bg-[rgba(70,18,118,1)] lg:py-20 text-white">
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
-        <div className="py-16 flex items-center gap-[14rem]">
+        <div className="py-16 flex flex-col lg:flex-row lg:items-center lg:gap-[14rem] gap-8">
           {/* Brand Section */}
-          <div className="w-[27%] space-y-6">
+          <div className="w-full lg:w-[27%] space-y-6">
             <div className="flex items-center space-x-2">
               <div className="w-13 h-13 bg-gradient-to-br rounded-full flex items-center justify-center">
                 <img src={Logo} className="" />
@@ -74,7 +74,7 @@ We uplift women and children by providing emotional support, educational tools, 
 
 
 
-<div className='flex gap-[5rem]'>
+<div className='flex flex-col sm:flex-row sm:gap-[3rem] lg:gap-[5rem] gap-8'>
 
           <div className="space-y-6">
             <h3 className="text-lg text-white font-bold">Quick Links</h3>
@@ -98,12 +98,22 @@ We uplift women and children by providing emotional support, educational tools, 
             <ul className="space-y-3">
               {programs.map((program, index) => (
                 <li key={index}>
-                  <a 
-                    href={program.href}
-                    className="text-gray-300 hover:text-purple-400 transition-colors duration-200 text-sm"
-                  >
-                    {program.name}
-                  </a>
+                  {program.isLabel ? (
+                    <span className="text-white font-bold text-sm">
+                      {program.name}
+                    </span>
+                  ) : program.href ? (
+                    <a 
+                      href={program.href}
+                      className="text-gray-300 hover:text-purple-400 transition-colors duration-200 text-sm"
+                    >
+                      {program.name}
+                    </a>
+                  ) : (
+                    <span className="text-gray-300 text-sm">
+                      {program.name}
+                    </span>
+                  )}
                 </li>
               ))}
             </ul>
@@ -112,7 +122,7 @@ We uplift women and children by providing emotional support, educational tools, 
           {/* Newsletter & Social */}
           <div className="space-y-6">
             <h3 className="text-lg text-white  font-bold">Visit Us</h3>
-            <p className="text-gray-300 text-sm">
+            <p className="text-white font-bold text-sm">
               Address
             </p>
 

@@ -38,7 +38,7 @@ export function CookieConsent() {
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-center p-4 pointer-events-none">
       {/* Backdrop */}
-      <div className="absolute inset-0 bg-black bg-opacity-20 pointer-events-auto" onClick={handleClose}></div>
+      <div className="absolute inset-0 bg-black opacity-20 pointer-events-auto" onClick={handleClose}></div>
       
       {/* Cookie Banner */}
       <div className="relative w-full max-w-4xl bg-white rounded-2xl shadow-2xl border border-gray-200 pointer-events-auto transform transition-all duration-300 ease-out">
@@ -76,11 +76,11 @@ export function CookieConsent() {
               {/* Cookie Details */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 py-4 border-t border-gray-100">
                 <div className="text-center sm:text-left">
-                  <div className="font-semibold text-primary text-sm">Essential</div>
+                  <div className="font-semibold text-purple-600 text-sm">Essential</div>
                   <div className="text-xs text-gray-500 mt-1">Required for site functionality</div>
                 </div>
                 <div className="text-center sm:text-left">
-                  <div className="font-semibold text-primary text-sm">Analytics</div>
+                  <div className="font-semibold text-purple-600 text-sm">Analytics</div>
                   <div className="text-xs text-gray-500 mt-1">Help us improve our website</div>
                 </div>
        

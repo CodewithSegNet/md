@@ -27,7 +27,7 @@ export function ServicesSection() {
 </div>
 
 
-<div ref={imagesRef} className='flex justify-center gap-9 mx-auto'>
+<div ref={imagesRef} className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 justify-items-center'>
 
   <div className={`transition-all duration-1000 delay-200 ease-out ${
     areImagesVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-95'
@@ -36,7 +36,7 @@ export function ServicesSection() {
   </div>
 
 
-    <div className={`mt-[4rem] transition-all duration-1000 delay-400 ease-out ${
+    <div className={`lg:mt-[4rem] transition-all duration-1000 delay-400 ease-out ${
       areImagesVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-95'
     }`}>
       <img src={desktop1} alt="" className="hover:scale-105 transition-transform duration-500 ease-out" />

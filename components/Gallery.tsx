@@ -19,41 +19,41 @@ export function Gallery() {
   return (
     <section ref={sectionRef} id="gallery" className="py-16 lg:py-24 bg-gradient-to-br from-purple-50 to-pink-50 overflow-hidden">
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
-        <div className="gap-4">
+        <div className="gap-4 w-full max-w-6xl">
 
           <div ref={headerRef} className={`flex text-left gap-4 flex-col mb-5 justify-start transition-all duration-1000 ease-out ${
             isHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
-            <p className='bg-[rgba(203,8,240,0.1)] shadow-md rounded-full w-fit px-3 py-1 text-md font-normal text-[rgba(26,26,26,1)]'>Why It Matters</p>
+            <p className='bg-[rgba(203,8,240,0.1)] shadow-md rounded-full w-fit px-3 py-1 text-sm md:text-md font-normal text-[rgba(26,26,26,1)]'>Why It Matters</p>
 
-            <h3 className='font-normal text-[35px] font-georgia'>We've Touched Lives</h3>
+            <h3 className='font-normal text-2xl md:text-3xl lg:text-[35px] font-georgia'>We've Touched Lives</h3>
           </div>
 
-          <div ref={topRowRef} className="flex gap-4 h-[450px] mb-4 justify-center">
-            <div className={`w-[65%] rounded-2xl overflow-hidden transition-all duration-1000 ease-out ${
+          <div ref={topRowRef} className="flex flex-col md:flex-row gap-4 h-auto md:h-[300px] lg:h-[450px] mb-4 justify-center">
+            <div className={`w-full md:w-[65%] h-[250px] md:h-full rounded-2xl overflow-hidden transition-all duration-1000 ease-out ${
               isTopRowVisible ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 -translate-x-8 scale-95'
             }`}>
               <img src={desktop2} alt="" className="w-full h-full object-cover object-top hover:scale-110 transition-transform duration-700 ease-out" />
             </div>
-            <div className={`w-[35%] rounded-2xl overflow-hidden transition-all duration-1000 delay-300 ease-out ${
+            <div className={`w-full md:w-[35%] h-[250px] md:h-full rounded-2xl overflow-hidden transition-all duration-1000 delay-300 ease-out ${
               isTopRowVisible ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 translate-x-8 scale-95'
             }`}>
               <img src={desktop1} alt="" className="w-full h-full object-cover object-top hover:scale-110 transition-transform duration-700 ease-out" />
             </div>
           </div>
 
-          <div ref={bottomRowRef} className="flex gap-4 h-[450px] justify-center">
-            <div className={`w-[30%] rounded-2xl overflow-hidden transition-all duration-1000 ease-out ${
+          <div ref={bottomRowRef} className="flex flex-col md:flex-row gap-4 h-auto md:h-[300px] lg:h-[450px] justify-center">
+            <div className={`w-full md:w-[30%] h-[250px] md:h-full rounded-2xl overflow-hidden transition-all duration-1000 ease-out ${
               isBottomRowVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-95'
             }`}>
               <img src={desktop} alt="" className="w-full h-full object-cover object-top hover:scale-110 transition-transform duration-700 ease-out" />
             </div>
-            <div className={`w-[40%] rounded-2xl overflow-hidden transition-all duration-1000 delay-200 ease-out ${
+            <div className={`w-full md:w-[40%] h-[250px] md:h-full rounded-2xl overflow-hidden transition-all duration-1000 delay-200 ease-out ${
               isBottomRowVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-95'
             }`}>
               <img src={desktop3} alt="" className="w-full h-full object-cover object-top hover:scale-110 transition-transform duration-700 ease-out" />
             </div>
-            <div className={`w-[30%] rounded-2xl overflow-hidden transition-all duration-1000 delay-400 ease-out ${
+            <div className={`w-full md:w-[30%] h-[250px] md:h-full rounded-2xl overflow-hidden transition-all duration-1000 delay-400 ease-out ${
               isBottomRowVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-95'
             }`}>
               <img src={desktop4} alt="" className="w-full h-full object-cover object-top hover:scale-110 transition-transform duration-700 ease-out" />

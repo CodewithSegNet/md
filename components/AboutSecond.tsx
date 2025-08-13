@@ -13,7 +13,7 @@ const AboutSecond = () => {
 
 
   <div className="container mx-auto max-w-screen-2xl">        
-        <div ref={gridRef} className="grid grid-cols-3 grid-rows-4 gap-6 h-[550px]">
+        <div ref={gridRef} className="grid lg:grid-cols-3 lg:grid-rows-4 gap-6 md:h-[550px]">
             {/* First Column - 2 boxes */}
             <div className={`bg-blue-500 text-white py-[4rem] px-7 rounded-2xl flex items-center justify-center row-span-3 transition-all duration-700 delay-100 ease-out ${
               isGridVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'

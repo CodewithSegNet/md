@@ -31,7 +31,7 @@ const AboutSeven = () => {
 <div className='flex items-start gap-8 flex-col'>
 
 
-<div ref={topRowRef} className={`flex items-center gap-[24px] transition-all duration-1000 ease-out ${
+<div ref={topRowRef} className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[24px] transition-all duration-1000 ease-out ${
   isTopRowVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
 }`}>
     <div className={`transition-all duration-700 ease-out delay-100 ${
@@ -85,7 +85,7 @@ const AboutSeven = () => {
 
 
 
-<div ref={bottomRowRef} className={`flex items-center gap-[24px] mt-10 transition-all duration-1000 ease-out ${
+<div ref={bottomRowRef} className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[24px] mt-10 transition-all duration-1000 ease-out ${
   isBottomRowVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
 }`}>
     <div className={`transition-all duration-700 ease-out delay-200 ${

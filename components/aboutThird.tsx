@@ -10,13 +10,13 @@ const AboutThird = () => {
   return (
     <section ref={sectionRef} className="py-16 lg:py-24 bg-gradient-to-br from-purple-50 to-pink-50 overflow-hidden">
 
-        <div className='flex items-start max-w-screen-2xl px-4 sm:px-6 lg:px-8 mx-auto'>
+        <div className='md:flex items-start max-w-screen-2xl px-4 sm:px-6 lg:px-8 mx-auto'>
 
             <div ref={titleRef} className={`transition-all duration-1000 ease-out ${
               isTitleVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
             }`}>
 
-<h1 className='text-[40px] w-[461px] font-normal font-georgia'>
+<h1 className='text-[40px] w-[461px] font-normal font-georgia mb-5 md:mb-0'>
     Who We Are
 </h1>
             </div>

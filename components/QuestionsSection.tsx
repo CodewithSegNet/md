@@ -34,34 +34,34 @@ const FAQSection = () => {
   ];
 
   return (
-    <div ref={sectionRef} className="py-16 lg:py-[10rem] relative bg-gradient-to-br from-purple-50 to-pink-50 overflow-hidden">
-      <div className="max-w-screen-2xl mx-auto px-4">
-        <div className="flex gap-8">
-          {/* Header Section - becomes sticky when scrolling */}
-          <div className="w-1/3 relative">            
-            <div className="sticky top-8">
-              <div ref={headerRef} className={`flex text-left gap-7 flex-col mx-auto transition-all duration-1000 ease-out ${
+    <div ref={sectionRef} className="py-8 sm:py-12 lg:py-16 xl:py-[10rem] relative bg-gradient-to-br from-purple-50 to-pink-50 overflow-hidden">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8">
+          {/* Header Section - becomes sticky when scrolling on desktop */}
+          <div className="w-full lg:w-1/3 relative">            
+            <div className="lg:sticky lg:top-8">
+              <div ref={headerRef} className={`flex text-left gap-4 sm:gap-6 lg:gap-7 flex-col mx-auto transition-all duration-1000 ease-out ${
                 isHeaderVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
               }`}>
-                <p className='bg-[rgba(203,8,240,0.1)] shadow-md rounded-full w-fit px-3 py-1 text-md font-normal text-[rgba(26,26,26,1)]'>Common Questions</p>
+                <p className='bg-[rgba(203,8,240,0.1)] shadow-md rounded-full w-fit px-3 py-1 text-sm sm:text-md font-normal text-[rgba(26,26,26,1)]'>Common Questions</p>
                 
                 <div className={`transition-all duration-800 delay-300 ${
                   isHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
                 }`}>
-                  <h3 className='font-normal text-[37px] font-georgia leading-11'>Your Questions <br /> Answered</h3>
-                  <p className='font-normal text-md font-helvetica'>Everything You Need to Know About <br /> EELI</p>
+                  <h3 className='font-normal text-[24px] sm:text-[30px] lg:text-[37px] font-georgia leading-7 sm:leading-9 lg:leading-11'>Your Questions <br className="hidden sm:block" /> Answered</h3>
+                  <p className='font-normal text-sm sm:text-md font-helvetica mt-2'>Everything You Need to Know About <br className="hidden sm:block" /> EELI</p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* FAQ Questions Section - always scrollable */}
-          <div className="w-2/3 ml-auto">
+          <div className="w-full lg:w-2/3 lg:ml-auto mt-6 lg:mt-0">
             <div ref={faqItemsRef} className="">
               {faqData.map((item, index) => (
                 <div 
                   key={index} 
-                  className={`border-b-2 py-7 overflow-hidden transition-all duration-800 ease-out ${
+                  className={`border-b-2 py-4 sm:py-6 lg:py-7 overflow-hidden transition-all duration-800 ease-out ${
                     areFaqItemsVisible 
                       ? 'opacity-100 translate-x-0' 
                       : 'opacity-0 translate-x-8'
@@ -76,24 +76,24 @@ const FAQSection = () => {
                 >
                   <button
                     onClick={() => toggleItem(index)}
-                    className="w-full px-6 py-4 text-left flex justify-between items-center transition-colors duration-200 hover:scale-[1.02] transform"
+                    className="w-full px-3 sm:px-4 lg:px-6 py-3 sm:py-4 text-left flex justify-between items-center transition-colors duration-200 hover:scale-[1.02] transform"
                   >
-                    <h3 className="text-lg font-georgia font-semibold text-gray-900 pr-4">
+                    <h3 className="text-sm sm:text-base lg:text-lg font-georgia font-semibold text-gray-900 pr-3 sm:pr-4">
                       {item.question}
                     </h3>
                     <div className="flex-shrink-0">
                       {openItems[index] ? (
-                        <ChevronUp className="w-5 h-5 text-gray-500 transition-transform duration-300 hover:scale-110" />
+                        <ChevronUp className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500 transition-transform duration-300 hover:scale-110" />
                       ) : (
-                        <ChevronDown className="w-5 h-5 text-gray-500 transition-transform duration-300 hover:scale-110" />
+                        <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500 transition-transform duration-300 hover:scale-110" />
                       )}
                     </div>
                   </button>
                   
                   {openItems[index] && (
-                    <div className="px-6 pb-4 animate-fade-in-down">
-                      <div className="border-t border-gray-200 pt-4">
-                        <p className="font-helvetica text-gray-700 leading-relaxed">
+                    <div className="px-3 sm:px-4 lg:px-6 pb-3 sm:pb-4 animate-fade-in-down">
+                      <div className="border-t border-gray-200 pt-3 sm:pt-4">
+                        <p className="font-helvetica text-gray-700 leading-relaxed text-sm sm:text-base">
                           {item.answer}
                         </p>
                       </div>

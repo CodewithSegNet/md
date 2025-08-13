@@ -33,7 +33,7 @@ const AboutSix = () => {
 
 <div ref={imagesRef} className='flex flex-col justify-center gap-9 mx-auto'>
 
-    <div ref={topRowRef} className={`flex justify-center gap-9 mx-auto transition-all duration-1000 ease-out ${
+    <div ref={topRowRef} className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 justify-items-center transition-all duration-1000 ease-out ${
       isTopRowVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
     }`}>
           <div className={`transition-all duration-700 delay-100 ease-out ${
@@ -58,7 +58,7 @@ const AboutSix = () => {
     </div>
 
 
-<div ref={bottomRowRef} className={`flex justify-center gap-9 mx-auto transition-all duration-1000 ease-out ${
+<div ref={bottomRowRef} className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 justify-items-center transition-all duration-1000 ease-out ${
   isBottomRowVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
 }`}>
       <div className={`transition-all duration-700 delay-200 ease-out ${

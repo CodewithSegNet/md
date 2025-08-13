@@ -58,7 +58,7 @@ const AboutFour = () => {
 
       <div className='max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8'>
 
-     <div ref={containerRef} className={`flex items-center justify-center rounded-2xl transition-all duration-1000 ease-out ${
+     <div ref={containerRef} className={`hidden lg:flex items-center justify-center rounded-2xl transition-all duration-1000 ease-out ${
        isContainerVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-95'
      }`} style={{
        backgroundImage: `url(${img1})`,
@@ -70,7 +70,7 @@ const AboutFour = () => {
      }}>
 
 
-<div className='flex gap-10 items-center'>
+<div className='flex gap-10 items-center '>
 
 
 <div className={`w-[286px] transform transition-all duration-700 hover:scale-105 ${
@@ -133,6 +133,66 @@ const AboutFour = () => {
 
      </div>
 
+
+
+<div className='block lg:hidden gap-10 items-center text-center justify-center'>
+
+
+<div className={`w-full transform transition-all duration-700 hover:scale-105 ${
+  isContainerVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'
+} delay-100 ease-out`}>
+
+    <h1 className='text-[64px] text-[rgba(203,8,240,1)] font-georgia mb-3 font-normal'>
+      <CountUp end={100} duration={2500} delay={200} />
+    </h1>
+
+    <h3 className='font-normal mb-2 text-xl font-georgia text-black'>Women Empowered</h3>
+    <p className='text-base font-helvetica font-normal'>Mentorship, skills training, and support programs.</p>
+</div>
+
+
+<div className={`w-full transform transition-all duration-700 hover:scale-105 ${
+  isContainerVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'
+} delay-300 ease-out`}>
+
+    <h1 className='text-[64px] text-[rgba(203,8,240,1)] font-georgia mb-3 font-normal'>
+      <CountUp end={120} duration={2500} delay={400} />
+    </h1>
+
+    <h3 className='font-normal mb-2 text-xl font-georgia text-black'>Children Reached</h3>
+    <p className='text-base font-helvetica font-normal'>School drives, food programs, and holiday support.</p>
+</div>
+
+
+<div className={`w-full transform transition-all duration-700 hover:scale-105 ${
+  isContainerVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'
+} delay-500 ease-out`}>
+
+    <h1 className='text-[64px] text-[rgba(203,8,240,1)] font-georgia mb-3 font-normal'>
+      <CountUp end={50} duration={2500} delay={600} />
+    </h1>
+
+    <h3 className='font-normal mb-2 text-xl font-georgia text-black'>Community Events</h3>
+    <p className='text-base font-helvetica font-normal'>Workshops, healing sessions, and leadership seminars.</p>
+</div>
+
+
+
+<div className={`w-full transform transition-all duration-700 hover:scale-105 ${
+  isContainerVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'
+} delay-700 ease-out`}>
+
+    <h1 className='text-[64px] text-[rgba(203,8,240,1)] font-georgia mb-3 font-normal'>
+      <CountUp end={90} duration={2500} delay={800} />
+    </h1>
+
+    <h3 className='font-normal mb-2 text-xl font-georgia text-black'>Families Assisted </h3>
+    <p className='text-base font-helvetica font-normal'>Providing financial relief, emotional support, and practical care to families in need.</p>
+</div>
+
+
+
+</div>
 
 </div>
 

@@ -26,9 +26,9 @@ const AboutFirst = () => {
 }`}>
   <p className='bg-[rgba(203,8,240,0.1)] shadow-md mx-auto rounded-full w-fit px-3 py-1 text-md font-normal text-[rgba(26,26,26,1)]'>About Us</p>
 
-  <h3 className='font-normal text-[35px] font-georgia'>Get to know about EELI</h3>
+  <h3 className='font-normal text-[25px] md:text-[35px] font-georgia'>Get to know about EELI</h3>
 
-  <p className='text-xs'>EELI empowers women and children through support, education, and life-changing community programs.</p>
+  <p className='text-xs px-2 md:px-0'>EELI empowers women and children through support, education, and life-changing community programs.</p>
 </div>
 
      </div>
