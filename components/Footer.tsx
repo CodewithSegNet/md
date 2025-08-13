@@ -9,7 +9,7 @@ export function Footer() {
     { name: 'About Us', href: '/about-us' },
     { name: 'Blog', href: '/get-involved' },
     { name: 'Gallery', href: '/gallery' },
-    { name: 'Announcements', href: '/contact' },
+    { name: 'Announcements', href: '/announcements' },
   ];
 
   const programs = [
