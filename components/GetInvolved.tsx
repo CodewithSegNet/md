@@ -79,6 +79,9 @@ export function GetInvolved() {
     <section ref={sectionRef} className="py-8 sm:py-12 lg:py-16 xl:py-24 mx-auto bg-gradient-to-br from-purple-50 to-pink-50 overflow-hidden">
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className='flex flex-col lg:flex-row items-center lg:items-end justify-center gap-3 sm:gap-4 lg:gap-5'>
+           <h3 className='text-[21px] lg:hidden block  sm:text-2xl lg:text-3xl font-georgia mt-[1.2rem] lg:mt-0 mb-2 sm:mb-4'>Get Involved</h3>
+            <p className='text-sm sm:text-sm mb-3  lg:hidden block sm:mb-4'> Together, we can uplift voices, and build lasting legacies that empower women and transform generations.</p>
+
           <div ref={leftCardRef} className={`bg-[rgba(203,8,240,0.1)] relative rounded-2xl p-4 sm:p-6 lg:p-7 w-full max-w-[577px] transition-all duration-1000 ease-out ${
             isLeftCardVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
           }`}>
@@ -98,12 +101,12 @@ export function GetInvolved() {
           <div ref={centerCardRef} className={`w-full max-w-[424px] transition-all duration-1000 delay-200 ease-out ${
             isCenterCardVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}>
-            <h3 className='text-[21px] sm:text-2xl lg:text-3xl font-georgia mt-[1.2rem] lg:mt-0 mb-2 sm:mb-4'>Get Involved</h3>
-            <p className='text-sm sm:text-sm mb-3 sm:mb-4'> Together, we can uplift voices, and build lasting legacies that empower women and transform generations.</p>
+            <h3 className='text-[21px] hidden lg:block  sm:text-2xl lg:text-3xl font-georgia mt-[1.2rem] lg:mt-0 mb-2 sm:mb-4'>Get Involved</h3>
+            <p className='text-sm sm:text-sm mb-3  hidden lg:block sm:mb-4'> Together, we can uplift voices, and build lasting legacies that empower women and transform generations.</p>
 
 
             <div 
-  className={`w-full max-w-[424px] h-[300px] sm:h-[350px] lg:h-[423px] bg-cover bg-center bg-no-repeat relative rounded-2xl overflow-hidden hover:scale-105 transition-all duration-700 ease-out ${
+  className={`w-full max-w-[424px] h-[300px] sm:h-[350px] lg:h-[423px] bg-cover bg-center bg-no-repeat relative rounded-2xl overflow-hidden hover:scale-105 mt-4 lg:mt-0 transition-all duration-700 ease-out ${
     isCenterCardVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
   }`}
   style={{ backgroundImage: `url(${PlayCard})` }}
@@ -116,8 +119,8 @@ export function GetInvolved() {
 <div className={`w-full flex items-center justify-between px-1 sm:px-2 mb-6 sm:mb-8 lg:mb-10 transition-all duration-600 delay-500 ${
   isCenterCardVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
 }`}>
-  <img src={bolb} alt="" className={`w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 transition-all duration-300 ${isCenterCardVisible ? 'animate-pulse-soft' : ''}`} />
-    <img src={arrup} alt="" className={`w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 transition-all duration-300 ${isCenterCardVisible ? 'animate-bounce-soft' : ''}`} />
+  <img src={bolb} alt="" className={`w-10 h-10 sm:w-10 sm:h-10 lg:w-10 lg:h-10 transition-all duration-300 ${isCenterCardVisible ? 'animate-pulse-soft' : ''}`} />
+    <img src={arrup} alt="" className={`w-10 h-10 sm:w-10 sm:h-10 lg:w-10 lg:h-10 transition-all duration-300 ${isCenterCardVisible ? 'animate-bounce-soft' : ''}`} />
 
 </div>
 
@@ -171,7 +174,7 @@ export function GetInvolved() {
                       disabled={isTransitioning}
                       className="bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full p-1.5 sm:p-2 transition-all duration-200 transform hover:scale-110 hover:-translate-x-1 disabled:opacity-50 disabled:cursor-not-allowed active:scale-95"
                     >
-                      <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 text-white transition-transform duration-200" />
+                      <ChevronLeft className="w-6 h-6 sm:w-7 sm:h-7 text-white transition-transform duration-200" />
                     </button>
 
                       {/* Dots Indicator */}
@@ -195,7 +198,7 @@ export function GetInvolved() {
                       disabled={isTransitioning}
                       className="bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full p-1.5 sm:p-2 transition-all duration-200 transform hover:scale-110 hover:translate-x-1 disabled:opacity-50 disabled:cursor-not-allowed active:scale-95"
                     >
-                      <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-white transition-transform duration-200" />
+                      <ChevronRight className="w-6 h-6 sm:w-7 sm:h-7 text-white transition-transform duration-200" />
                     </button>
                   </div>
 
@@ -211,7 +214,7 @@ export function GetInvolved() {
 
 
 
-<div ref={rightCardRef} className={`bg-white p-3 sm:p-4 h-auto min-h-[300px] sm:min-h-[350px] lg:h-[375px] w-full max-w-[374px] rounded-2xl transition-all duration-1000 delay-400 ease-out ${
+<div ref={rightCardRef} className={`bg-white p-3 sm:p-4 h-auto min-h-[300px] sm:min-h-[350px] lg:h-[375px] w-full max-w-[374px] mt-4 lg:mt-0 rounded-2xl transition-all duration-1000 delay-400 ease-out ${
   isRightCardVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
 }`}>
 
@@ -219,7 +222,7 @@ export function GetInvolved() {
   isRightCardVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
 }`}>
   <h3 className='font-georgia text-xl sm:text-2xl lg:text-3xl mb-2 sm:mb-3'> Join Our Community</h3>
-  <p className='font-helvetica text-xs sm:text-sm'>Be part of a strong, supportive network where women and children thrive</p>
+  <p className='font-helvetica text-sm sm:text-sm'>Be part of a strong, supportive network where women and children thrive</p>
 </div>
 
 <div className={`w-full flex items-center justify-center my-[1.5rem] sm:my-[2rem] transition-all duration-800 delay-800 ${

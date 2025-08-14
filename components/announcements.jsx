@@ -241,12 +241,12 @@ const FourthLayer = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center justify-center lg:justify-end w-full gap-2">
+              <div className="flex items-center justify-center lg:justify-end w-full my-5 gap-2">
                 <button onClick={prevEvent}>
-                  <img src={LeftArrow} loading="eager" alt="Previous" className="w-7 h-7 md:w-8 h-8 lg:w-9 lg:h-9 hover:scale-105 duration-200" />
+                  <img src={LeftArrow} loading="eager" alt="Previous" className="md:w-8  lg:w-9 lg:h-9 hover:scale-105 duration-200" />
                 </button>
                 <button onClick={nextEvent}>
-                  <img src={RightArrow} loading="eager" alt="Next" className="w-7 h-7 md:w-8 h-8 lg:w-9 lg:h-9 hover:scale-105 duration-200" />
+                  <img src={RightArrow} loading="eager" alt="Next" className="md:w-8 lg:w-9 lg:h-9 hover:scale-105 duration-200" />
                 </button>
               </div>
             </div>
