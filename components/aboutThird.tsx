@@ -16,7 +16,7 @@ const AboutThird = () => {
               isTitleVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
             }`}>
 
-<h1 className='text-[40px] w-[461px] font-normal font-georgia mb-5 md:mb-0'>
+<h1 className='text-[21px] md:text-[40px] w-[461px] font-normal font-georgia mb-5 md:mb-0'>
     Who We Are
 </h1>
             </div>
@@ -24,7 +24,7 @@ const AboutThird = () => {
 <div ref={contentRef} className={`transition-all duration-1000 delay-300 ease-out ${
   isContentVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
 }`}>
-<p className='text-base font-helvetica'>
+<p className='text-sm md:text-base font-helvetica'>
     Empowerment & Elevation Legacy International (EELI) is a community-driven organization committed to uplifting women and children through compassion, support, and empowerment. We provide practical tools, emotional guidance, and life-changing programs that inspire growth, build resilience, and create lasting impact in communities locally and globally.
 At EELI, we believe in nurturing the bond between mothers and children while helping families thrive.
 </p>

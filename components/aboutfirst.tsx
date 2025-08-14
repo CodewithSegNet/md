@@ -24,7 +24,7 @@ const AboutFirst = () => {
 <div ref={headerRef} className={`flex text-center gap-5 flex-col justify-center mx-auto transition-all duration-1000 ease-out ${
   isHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
 }`}>
-  <p className='bg-[rgba(203,8,240,0.1)] shadow-md mx-auto rounded-full w-fit px-3 py-1 text-md font-normal text-[rgba(26,26,26,1)]'>About Us</p>
+  <p className='bg-[rgba(203,8,240,0.1)] shadow-md mx-auto rounded-full w-fit px-3 py-1 text-sm md:text-md font-normal text-[rgba(26,26,26,1)]'>About Us</p>
 
   <h3 className='font-normal text-[25px] md:text-[35px] font-georgia'>Get to know about EELI</h3>
 

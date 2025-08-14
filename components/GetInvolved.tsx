@@ -83,23 +83,23 @@ export function GetInvolved() {
             isLeftCardVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
           }`}>
             <img src={woman} className='w-full h-auto relative hover:scale-105 transition-transform duration-500 ease-out' alt="" />
-            <img src={buttonarr} className={`absolute top-6 right-6 sm:top-8 sm:right-8 lg:top-10 lg:right-12 w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 transform hover:-translate-y-1 hover:scale-105 duration-300 transition-all delay-700 ${
+            <img src={buttonarr} className={`absolute top-11 right-6 sm:top-8 sm:right-8 lg:top-10 lg:right-12 w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 transform hover:scale-125 duration-300 transition-all delay-700 ${
               isLeftCardVisible ? 'opacity-100 translate-y-0 animate-float' : 'opacity-0 translate-y-4'
             }`} alt="" />
 
-            <div className={`w-full max-w-[400px] pt-[1rem] transition-all duration-800 delay-300 ${
+            <div className={`w-full max-w-[400px] pt-[1rem] transition-all duration-800 delay-300  ${
               isLeftCardVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
             }`}>
-              <h3 className='font-georgia font-normal text-xl sm:text-2xl lg:text-3xl mb-2'>Where <span className='text-regular'>Love</span> Begins and Grows</h3>
-              <p className='text-xs sm:text-sm font-helvetica'>How we empower the bond between women and children through care, support, and lasting impact.</p>
+              <h3 className='font-georgia font-normal text-[21px] sm:text-2xl lg:text-3xl mb-2'>Where <span className='text-regular'>Love</span> Begins and Grows</h3>
+              <p className='text-sm sm:text-sm font-helvetica'>How we empower the bond between women and children through care, support, and lasting impact.</p>
             </div>
           </div>
 
           <div ref={centerCardRef} className={`w-full max-w-[424px] transition-all duration-1000 delay-200 ease-out ${
             isCenterCardVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}>
-            <h3 className='text-xl sm:text-2xl lg:text-3xl font-georgia mb-3 sm:mb-4'>Get Involved</h3>
-            <p className='text-xs sm:text-sm mb-3 sm:mb-4'> Together, we can uplift voices, and build lasting legacies that empower women and transform generations.</p>
+            <h3 className='text-[21px] sm:text-2xl lg:text-3xl font-georgia mt-[1.2rem] lg:mt-0 mb-2 sm:mb-4'>Get Involved</h3>
+            <p className='text-sm sm:text-sm mb-3 sm:mb-4'> Together, we can uplift voices, and build lasting legacies that empower women and transform generations.</p>
 
 
             <div 

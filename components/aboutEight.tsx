@@ -20,7 +20,7 @@ const AboutEight = () => {
           }`}>
             <p className='bg-[rgba(203,8,240,0.1)] shadow-md rounded-full w-fit px-3 py-1 text-md font-normal text-[rgba(26,26,26,1)]'>Our Volunteers</p>
 
-            <h3 className='font-normal text-[35px] font-georgia'>Meet Our Volunteers</h3>
+            <h3 className='font-normal text-[21px] md:text-[35px] font-georgia'>Meet Our Volunteers</h3>
           </div>
 
 
@@ -37,7 +37,7 @@ const AboutEight = () => {
         <img src={desktop4} className='h-[434px] w-[366px] transition-transform duration-500 hover:scale-105' alt="" />
 
         <div>
-            <h1 className='text-xl font-normal text-black font-georgia my-2'>Uche Vivian</h1>
+            <h1 className='font-normal text-black font-georgia text-2xl my-1 lg:my-2'>Uche Vivian</h1>
             <h1 className='text-base font-normal font-helvetica'>Volunteer</h1>
         </div>
     </div>
@@ -48,7 +48,7 @@ const AboutEight = () => {
         <img src={desktop5} className='h-[434px] w-[366px] transition-transform duration-500 hover:scale-105' alt="" />
 
         <div>
-            <h1 className='text-xl font-normal text-black font-georgia my-2'>Sandra Adesanya</h1>
+            <h1 className='text-2xl my-1 lg:my-2 font-normal text-black font-georgia '>Sandra Adesanya</h1>
             <h1 className='text-base font-normal font-helvetica'>Volunteer</h1>
         </div>
     </div>
@@ -59,7 +59,7 @@ const AboutEight = () => {
         <img src={desktop} className='h-[434px] w-[366px] transition-transform duration-500 hover:scale-105' alt="" />
 
         <div>
-            <h1 className='text-xl font-normal text-black font-georgia my-2'>Grace Uwaifo</h1>
+            <h1 className='font-normal text-black font-georgia text-2xl my-1 lg:my-2'>Grace Uwaifo</h1>
             <h1 className='text-base font-normal font-helvetica'>Volunteer</h1>
         </div>
     </div>

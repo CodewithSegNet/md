@@ -48,7 +48,7 @@ const FAQSection = () => {
                 <div className={`transition-all duration-800 delay-300 ${
                   isHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
                 }`}>
-                  <h3 className='font-normal text-[24px] sm:text-[30px] lg:text-[37px] font-georgia leading-7 sm:leading-9 lg:leading-11'>Your Questions <br className="hidden sm:block" /> Answered</h3>
+                  <h3 className='font-normal text-[21px] sm:text-[30px] lg:text-[37px] font-georgia leading-7 sm:leading-9 lg:leading-11'>Your Questions <br className="hidden sm:block" /> Answered</h3>
                   <p className='font-normal text-sm sm:text-md font-helvetica mt-2'>Everything You Need to Know About <br className="hidden sm:block" /> EELI</p>
                 </div>
               </div>

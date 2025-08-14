@@ -21,7 +21,7 @@ export function Hero() {
           <div className="flex flex-col lg:flex-row justify-evenly gap-5 space-y-8 lg:space-y-0">
             <div className="flex flex-col lg:flex-row relative gap-5">
               
-              <div className='space-y-1'>
+              <div className='space-y-1 '>
 <h1 className="bg-white p-2 sm:p-3 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-normal w-fit rounded-2xl font-georgia text-gray-900 leading-tight relative animate-fade-in-up" style={{animationDelay: '0.2s'}}>
                 Empowering Women,
               
@@ -34,9 +34,9 @@ export function Hero() {
                 Transforming Generation
                 </h1>
 
-                <div className='flex gap-3 flex-col relative pt-[4rem] sm:pt-[5rem] lg:pt-[6rem]'>
+                <div className='flex gap-3 flex-col relative pt-[4rem] sm:pt-[5rem] lg:pt-[6rem] '>
 
-                     <p className=" text-sm sm:text-md md:text-md text-gray-600 leading-relaxed w-full max-w-[36.5rem] animate-fade-in-up" style={{animationDelay: '0.8s'}}>
+                     <p className=" text-sm sm:text-md md:text-md text-gray-600 leading-relaxed w-full lg:max-w-[36.5rem] animate-fade-in-up" style={{animationDelay: '0.8s'}}>
                 EELI is dedicated to fostering joy, hope, and lasting change through mentorship, community support, and love.
               </p>
 
@@ -49,7 +49,7 @@ export function Hero() {
 
 
                           <div className='flex items-center gap-3 mt-[2rem] sm:mt-[3rem] animate-fade-in-up' style={{animationDelay: '1.2s'}}>
-                            <img src={people} alt="" className="animate-pulse-soft w-8 h-8 sm:w-auto sm:h-auto" />
+                            <img src={people} alt="" className="animate-pulse-soft w-[8rem] h-[3rem] sm:w-auto sm:h-auto" />
                             <p className='font-helvetica font-normal text-sm sm:text-base'> <span className='text-primary font-black animate-count-up '> 50+</span> Women have been empowered <br /> by EELI </p>
                           </div>
                 </div>
@@ -57,10 +57,10 @@ export function Hero() {
 
 
 
-  <div className='relative inset-0 w-full max-w-[29.875rem] animate-fade-in-right' style={{animationDelay: '0.3s'}}>
+  <div className='relative inset-0 w-full lg:max-w-[29.875rem] animate-fade-in-right' style={{animationDelay: '0.3s'}}>
                   <img src={hero} className='relative hover:scale-105 transition-transform duration-500 ease-out w-full h-auto' alt="" />
 
-<div className='absolute bottom-0 right-[-1rem] sm:right-[-3rem] w-full max-w-[327px] flex flex-wrap items-center mb-6'>
+<div className='absolute bottom-0 right-[-1rem] sm:right-[-3rem] w-full max-w-[287px] lg:max-w-[327px] flex flex-wrap items-center mb-6'>
                            <div className='bg-white mb-2 p-2 sm:p-3 ml-1 sm:ml-2 rounded-full flex gap-2 items-center w-fit hover:shadow-md hover:scale-105 transition-all duration-300 animate-float' style={{animationDelay: '1.4s'}}>
 <img src={icon2} className='w-4 h-4 sm:w-5 sm:h-5' alt="" />
                   <p className='text-xs font-helvetica font-normal'>Women Who Lead</p>
@@ -79,7 +79,7 @@ export function Hero() {
          
             </div>
 
-            <div className="flex flex-col gap-2 w-full max-w-[23.0625rem] animate-fade-in-left" style={{animationDelay: '0.5s'}}>
+            <div className="flex flex-col gap-2 w-full lg:max-w-[23.0625rem] animate-fade-in-left" style={{animationDelay: '0.5s'}}>
 
               <div className='flex flex-col'>
                 <div className='bg-white mb-2 p-2 sm:p-3 rounded-full flex gap-2 items-center w-fit hover:shadow-md hover:scale-105 transition-all duration-300 animate-float' style={{animationDelay: '0.7s'}}>
@@ -88,7 +88,7 @@ export function Hero() {
                 </div>
 
                 <div className='flex items-end gap-3'>
-      <h2 className='text-[20px] sm:text-[25px] lg:text-[30px] font-normal font-georgia animate-fade-in-up' style={{animationDelay: '0.9s'}}>
+      <h2 className='text-[20px] sm:text-[25px] lg:text-[30px] font-normal font-georgia animate-fade-in-up mb-2 lg:mb-0' style={{animationDelay: '0.9s'}}>
                 Every Child <br /> Deserves to Smile
               </h2>
 
@@ -97,14 +97,14 @@ export function Hero() {
   
 
 
-              <p className="animate-fade-in-up font-helvetica font-normal text-sm sm:text-base" style={{animationDelay: '1.3s'}}>We believe every child deserves joy, love, and the chance to 
+              <p className="animate-fade-in-up font-helvetica font-normal text-sm sm:text-base mb-2 lg:mb-0" style={{animationDelay: '1.3s'}}>We believe every child deserves joy, love, and the chance to 
                 grow in a safe and supportive environment. 
                 Through community care and compassion, we create moments that light up their world.
                 </p>
               </div>
 
       
-<div className='w-full max-w-[23.0625rem] animate-fade-in-up' style={{animationDelay: '1.5s'}}>
+<div className='w-full lg:max-w-[23.0625rem] animate-fade-in-up' style={{animationDelay: '1.5s'}}>
                 <img src={hero2} alt="" className="hover:scale-105 transition-transform duration-500 ease-out w-full h-auto" />
 
 </div>

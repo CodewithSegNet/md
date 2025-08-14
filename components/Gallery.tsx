@@ -19,14 +19,14 @@ export function Gallery() {
   return (
     <section ref={sectionRef} id="gallery" className="py-16 lg:py-24 bg-gradient-to-br from-purple-50 to-pink-50 overflow-hidden">
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
-        <div className="gap-4 w-full max-w-6xl">
+        <div className="gap-4 w-full">
 
           <div ref={headerRef} className={`flex text-left gap-4 flex-col mb-5 justify-start transition-all duration-1000 ease-out ${
             isHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
             <p className='bg-[rgba(203,8,240,0.1)] shadow-md rounded-full w-fit px-3 py-1 text-sm md:text-md font-normal text-[rgba(26,26,26,1)]'>Why It Matters</p>
 
-            <h3 className='font-normal text-2xl md:text-3xl lg:text-[35px] font-georgia'>We've Touched Lives</h3>
+            <h3 className='font-normal text-[21px] lg:text-[35px] font-georgia'>We've Touched Lives</h3>
           </div>
 
           <div ref={topRowRef} className="flex flex-col md:flex-row gap-4 h-auto md:h-[300px] lg:h-[450px] mb-4 justify-center">

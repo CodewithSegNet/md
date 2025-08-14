@@ -15,9 +15,9 @@ export function NewsletterSection() {
       
 
 <div className='flex !max-w-screen-2xl text-left gap-4 flex-col mb-[5rem] justify-start mx-auto px-4 sm:px-6 lg:px-8 '>
-  <p className='bg-[rgba(203,8,240,0.1)] shadow-md rounded-full w-fit px-3 py-1 text-md font-normal text-[rgba(26,26,26,1)]'>EELI Testimonials</p>
+  <p className='bg-[rgba(203,8,240,0.1)] shadow-md rounded-full w-fit px-3 py-1 text-sm md:text-md font-normal text-[rgba(26,26,26,1)]'>EELI Testimonials</p>
 
-  <h3 className='font-normal text-[35px] font-georgia'>Real Stories, Real Strength, <br />
+  <h3 className='font-normal text-[21px] md:text-[35px] font-georgia'>Real Stories, Real Strength, <br />
 From <span className='text-[rgba(203,8,240,1)]'> Women  </span>  and <span className='text-[rgba(203,8,240,1)]'> Children</span></h3>
 </div>
 

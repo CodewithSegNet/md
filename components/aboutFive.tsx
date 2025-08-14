@@ -11,10 +11,10 @@ const WhatMakesUsBest = () => {
 <div ref={contentRef} className={`flex items-center flex-col justify-center transition-all duration-1000 ease-out ${
   isContentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
 }`}>
-  <h2 className={`font-georgia text-[35px] text-center transition-all duration-700 delay-200 ease-out ${
+  <h2 className={`font-georgia text-[21px] md:text-[35px] text-center transition-all duration-700 delay-200 ease-out ${
     isContentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
   }`}>At EELI, support is heartfelt — <span className='text-[rgba(203,8,240,1)]'>every action is guided by love, dignity, and empowerment.</span></h2>
-  <h2 className={`font-georgia text-[35px] text-center transition-all duration-700 delay-400 ease-out ${
+  <h2 className={`font-georgia text-[21px] md:text-[35px] text-center transition-all duration-700 delay-400 ease-out ${
     isContentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
   }`}>We uplift women and children every step of the way.</h2>
 </div>

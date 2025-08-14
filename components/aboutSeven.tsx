@@ -23,7 +23,7 @@ const AboutSeven = () => {
           }`}>
             <p className='bg-[rgba(203,8,240,0.1)] shadow-md rounded-full w-fit px-3 py-1 text-md font-normal text-[rgba(26,26,26,1)]'>Our Team</p>
 
-            <h3 className='font-normal text-[35px] font-georgia'>Meet Our Team</h3>
+            <h3 className='font-normal text-[21px] md:text-[35px] font-georgia'>Meet Our Team</h3>
           </div>
 
 
@@ -40,7 +40,7 @@ const AboutSeven = () => {
         <img src={desktop} className='h-[434px] w-[366px] transition-transform duration-500 hover:scale-105' alt="" />
 
         <div>
-            <h1 className='text-xl font-normal text-black font-georgia my-2'>Faith Idukpaye</h1>
+            <h1 className='font-normal text-black font-georgia text-2xl my-1 lg:my-2'>Faith Idukpaye</h1>
             <h1 className='text-base font-normal font-helvetica'>Founder</h1>
         </div>
     </div>
@@ -51,7 +51,7 @@ const AboutSeven = () => {
         <img src={desktop4} className='h-[434px] w-[366px] transition-transform duration-500 hover:scale-105' alt="" />
 
         <div>
-            <h1 className='text-xl font-normal text-black font-georgia my-2'>Trinity Ogboe</h1>
+            <h1 className='font-normal text-black font-georgia text-2xl my-1 lg:my-2'>Trinity Ogboe</h1>
             <h1 className='text-base font-normal font-helvetica'>Admin | Youth and Children Coordinator</h1>
         </div>
     </div>
@@ -63,7 +63,7 @@ const AboutSeven = () => {
         <img src={desktop2} className='h-[434px] w-[366px] transition-transform duration-500 hover:scale-105' alt="" />
 
         <div>
-            <h1 className='text-xl font-normal text-black font-georgia my-2'>Regina</h1>
+            <h1 className=' font-normal text-black font-georgia text-2xl my-1 lg:my-2'>Regina</h1>
             <h1 className='text-base font-normal font-helvetica'>Youth and Children Coordinator </h1>
         </div>
     </div>
@@ -75,7 +75,7 @@ const AboutSeven = () => {
         <img src={desktop1} className='h-[434px] w-[366px] transition-transform duration-500 hover:scale-105' alt="" />
 
         <div>
-            <h1 className='text-xl font-normal text-black font-georgia my-2'>Faith Abraham</h1>
+            <h1 className='font-normal text-black font-georgia text-2xl my-1 lg:my-2'>Faith Abraham</h1>
             <h1 className='text-base font-normal font-helvetica'>Image/Style/Etiquette Coordinator</h1>
         </div>
     </div>
@@ -94,7 +94,7 @@ const AboutSeven = () => {
         <img src={desktop3} className='h-[434px] w-[366px] transition-transform duration-500 hover:scale-105' alt="" />
 
         <div>
-            <h1 className='text-xl font-normal text-black font-georgia my-2'>Tirelo Ntsima</h1>
+            <h1 className='font-normal text-black font-georgia text-2xl my-1 lg:my-2'>Tirelo Ntsima</h1>
             <h1 className='text-base font-normal font-helvetica'>Career/Business/Investment coordinator </h1>
         </div>
     </div>
@@ -105,7 +105,8 @@ const AboutSeven = () => {
         <img src={desktop5} className='h-[434px] w-[366px] transition-transform duration-500 hover:scale-105' alt="" />
 
         <div>
-            <h1 className='text-xl font-normal text-black font-georgia my-2'>Gcinile</h1>
+            <h1 className='
+            font-normal text-black font-georgia text-2xl my-1 lg:my-2'>Gcinile</h1>
             <h1 className='text-base font-normal font-helvetica'>Head Youth and Children Coordinator</h1>
         </div>
     </div>
